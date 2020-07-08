@@ -1,5 +1,5 @@
 # eu4-svg-map
-Svg maps generated out of eu4 configs with oikoumene.
+Svg maps generated out of eu4 configs with [oikoumene](https://github.com/primislas/oikoumene).
 
 ![](docs/banner.png)
 
