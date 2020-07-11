@@ -11,13 +11,13 @@ Note that the two browsers will render maps differently.
 Globe projections can be view directly on github. Chrome and Firefox rendering is identical.
 Svg doesn't give us real 3D, but trigonometry allows us to imagine what if.
 This is why we need a real globe, Paradox! ;)
-* [europe](maps/globe-europe.svg)
-* [africa](maps/globe-africa.svg)
-* [mid-east](maps/globe-mid-east.svg)
-* [indian-ocean](maps/globe-indian-ocean.svg)
-* [china](maps/globe-china.svg)
-* [south-america](maps/globe-america-south.svg)
-* [north-atlantic](maps/globe-atlantic-north.svg)
+* [europe](https://raw.githubusercontent.com/primislas/eu4-svg-map/master/maps/globe-europe.svg)
+* [africa](https://raw.githubusercontent.com/primislas/eu4-svg-map/master/maps/globe-africa.svg)
+* [mid-east](https://raw.githubusercontent.com/primislas/eu4-svg-map/master/maps/globe-mid-east.svg)
+* [indian-ocean](https://raw.githubusercontent.com/primislas/eu4-svg-map/master/maps/globe-indian-ocean.svg)
+* [china](https://raw.githubusercontent.com/primislas/eu4-svg-map/master/maps/globe-china.svg)
+* [south-america](https://raw.githubusercontent.com/primislas/eu4-svg-map/master/maps/globe-america-south.svg)
+* [north-atlantic](https://raw.githubusercontent.com/primislas/eu4-svg-map/69ff5e1d843b103f4dee002518a1c3d5355f8087/maps/globe-atlantic-north.svg)
 * [others](maps)
 
 Contacts: primislas@protonmail.com
