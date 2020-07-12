@@ -20,7 +20,10 @@ This is why we need a real globe, Paradox! ;)
 * [north-atlantic](https://raw.githubusercontent.com/primislas/eu4-svg-map/69ff5e1d843b103f4dee002518a1c3d5355f8087/maps/globe-atlantic-north.svg)
 * [others](maps)
 
-Further reading:
-* [Dynamic Map Rendering: General Alogirthms](docs/pages/map-generation.md)
+Algorithm description:
+* [Province tracing](docs/pages/province-tracing.md)
+* [Border parsing](docs/pages/border-parsing.md)
+* [River parsing](docs/pages/river-parsing.md)
+* [Name placement](docs/pages/name-placement.md)
 
 Contacts: primislas@protonmail.com
