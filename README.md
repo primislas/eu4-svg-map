@@ -1,7 +1,7 @@
 # eu4-svg-map
 Svg maps generated out of eu4 configs with [oikoumene](https://github.com/primislas/oikoumene).
 
-![](docs/banner.png)
+![](docs/images/banner.png)
 
 Download the map and open from local file in either Chrome or Firefox. 
 If you open the link directly, github will block font and background texture loading. 
@@ -19,5 +19,8 @@ This is why we need a real globe, Paradox! ;)
 * [south-america](https://raw.githubusercontent.com/primislas/eu4-svg-map/master/maps/globe-america-south.svg)
 * [north-atlantic](https://raw.githubusercontent.com/primislas/eu4-svg-map/69ff5e1d843b103f4dee002518a1c3d5355f8087/maps/globe-atlantic-north.svg)
 * [others](maps)
+
+Further reading:
+* [Dynamic Map Rendering: General Alogirthms](docs/pages/map-generation.md)
 
 Contacts: primislas@protonmail.com
