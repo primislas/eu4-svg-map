@@ -3,7 +3,7 @@ EU4 svg maps generated out of eu4 configs with [oikoumene](https://github.com/pr
 
 ![](docs/images/banner.png)
 
-Download the map ([right click and save as](https://raw.githubusercontent.com/primislas/eu4-svg-map/49c741c04850f28b645940a8af6c445b81bfb3aa/maps/mercator-political-1.30.0.svg")) 
+Download the map ([right click and save as](https://raw.githubusercontent.com/primislas/eu4-svg-map/49c741c04850f28b645940a8af6c445b81bfb3aa/maps/mercator-political-1.30.0.svg)) 
 and open from local file in either Chrome or Firefox. 
 If you open the link directly, github will block font and background texture loading. 
 Note that the two browsers will render maps differently. Further, note
