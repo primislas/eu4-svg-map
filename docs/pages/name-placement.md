@@ -5,7 +5,8 @@
 * Names lie on a parabolic path. A good reason for limiting
 curvature to parabola is that names lying on more complex curves
 simply aren't very readable. Additionally, parabolas suffice for
-the vast majority of names to look nice.
+the vast majority of names to look nice. Finally, parabolic
+fitting is relatively quick and inexpensive resource-wise.
 * Names should be placed geometrically centrally. The practical
 consequence is that you can't use, say, province centers to approximate
 the name curve, as provinces are not evenly distributed. It is
@@ -59,8 +60,9 @@ out of appropriate segments.
 results that can be skewed and hijacked by complex and ridged borders,
 because these tend to have a lot more points. Additionally, this approach
 would be susceptible to various otherwise insignificant border curves.
-For example, consider the English South-West
-![english south west](../images/england-south-west.png)
+For example, consider the English South-West.
+
+    ![english south west](../images/england-south-west.png)
 1. To account for all of that, we build an approximate convex
 outer border representation with more or less evenly spaced out
 points. Specifically, for each (step = 5) x we'll put two points
@@ -83,12 +85,14 @@ That way names would curve towards thin sections better,
 which is generally what we want.
 1. Remember to track general thickness to later account for 
 "long thin shapes" (cases like Orissa).
-![long-thing-fit](../images/long-thin-fit.png)
+
+    ![long-thing-fit](../images/long-thin-fit.png)
 1. The polyline can be approximated with any
 polynomial curve fitting implementation.
 
 The image below illustrates all the steps: approximated border,
 centroid, orientation line, name polyline, name parabola, name.
+
 ![mamluk-name-fitting](../images/name-fitting-mamluks.png) 
 
 #### Deficiencies, further enhancements and alternatives
@@ -111,13 +115,15 @@ requires a qualitative algorithm improvement.
 left and right edges. For example, Ajam or in the most extreme case
 Yarkand. Learning to identify and deal with these cases 
 is the next qualitative step of algorithm enhancement.
-![edge-concavity](../images/edge-concavity-fit.png)
+
+    ![edge-concavity](../images/edge-concavity-fit.png)
 1. Horseshoe shapes do not always produce a result you'd expect.
-Identifying these kinds of shapes could be aesthetic microtweak.
+Identifying these kinds of shapes could be an aesthetic microtweak.
 Consider Nupe, Benin and the aforementioned Yarkand. It seems
-reasonable to expect a horseshoe-like name for these, no?
-Could be just me though. :)
-![horseshoe-names](../images/horseshoe-names.png)
+reasonable to expect a horseshoe-like name for these, no? 
+Could be just me. :)
+
+    ![horseshoe-names](../images/horseshoe-names.png)
 
 One major alternative to be considered is fitting not to
 a parabola but to an ellipse. An ellipse would account for quite

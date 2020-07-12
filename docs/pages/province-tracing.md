@@ -2,14 +2,15 @@
 
 One of the most widely used approaches to build a dynamic map
 is to represent it with a bmp province file, where each province
-has a unique color that can be used to identify other province
+has a unique color that can be used to link it to other province
 configs. A few things are required to be able to actually
 render these shapes:
 * trace shape borders to represent them as a polyline (basic level)
-* certain provinces consist of multiple shapes (think a broken shore line
+* many provinces consist of multiple shapes (think a broken shore line
 or a chain of small islands), this needs to be taken into account
-* certain shapes contain inner shapes inside them belonging to different
-provinces; tracer must be able to identify them as well
+* shapes can contain inner shapes completely enclosed inside them,
+with those shapes belonging to other provinces; 
+tracer must be able to identify these cases as well
 * depending on rendering engine, inner shapes need to be clipped out
 from enclosing shapes
 
@@ -27,7 +28,8 @@ Single pass covers all shapes.
 missing or losing them. 
 1. Oikoumene traces a shape by 'walking' its border clockwise
 pixel by pixel until it returns to the starting pixel. This means
-that the walker can identify the next direction and pixel.
+that the walker needs to be able to identify the next direction 
+and pixel for its current position.
 1. The tracer also should take care to identify neighbors of the shape
 it is walking. See the [border parsing](border-parsing.md) for details.
 1. The tricky part afterwards is to identify which shapes are "inner"
@@ -38,8 +40,8 @@ is clearly the enclosing shape. However, in practice a group of
 shapes can be enclosed by a large province, which means the naive
 approach could (and will even in base eu4) fail.
     * Instead, you should identify potential enclosed candidates during
-    the first grouping pass (step 1) - if you go through a horizontal
+    the 2nd (tracing) pass - if you go through a horizontal
     pixel line and discover that a group of pixels belonging to the same
     shape repeats after a "gap" of other shapes - that is a clear
-    enclosing candidate, which should later be investigated by looking
-    at "inner" candidates borders.
+    enclosing candidate, which should later be investigated by examining
+    "inner" candidates borders.

@@ -1,11 +1,12 @@
 ## Borders
 
-Border rendering styles differ depending on the relations between
+Border rendering styles differ depending on the relation between
 each two bordering provinces: is it a country border, an area border,
 a simple border, a shoreline, etc. What this means in practice is that
 its not enough for the border tracer to identify the general shape
 (province) border polyline. The latter needs to be split into
-border segments, where each segment is a border between two provinces.
+border segments, where each segment is a border between two 
+and only two provinces.
 
 Oikoumene [tracer](province-tracing.md) achieves this by marking border neigbors as it walks
 a shape's border. If you walk a shape clockwise, your right neighbor
