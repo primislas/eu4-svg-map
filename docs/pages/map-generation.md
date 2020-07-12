@@ -1,5 +1,11 @@
 # Dynamic Map Generation
 
+1. [Source bmp tracing](#tracer)
+2. [Borders](#borders)
+3. [Rivers](#rivers)
+4. [Name placement](#name-placement)
+
+<a name="tracer"></a>
 ## Source BMP and Tracing
 
 One of the most widely used approaches to build a dynamic map
@@ -46,9 +52,46 @@ approach could (and will even in base eu4) fail.
     enclosing candidate, which should later be investigated by looking
     at "inner" candidates borders.
 
-
+<a name="borders"></a>
 ## Borders
 
+Border rendering styles differ depending on the relations between
+each two bordering provinces: is it a country border, an area border,
+a simple border, a shoreline, etc. What this means in practice is that
+its not enough for the border tracer to identify the general shape
+(province) border polyline. The latter needs to be split into
+border segments, where each segment is a border between two provinces.
+
+Oikoumene tracer achieves this by marking border neigbors as it walks
+a shape's border. If you walk a shape clockwise, your right neighbor
+is always the same - the shape you're walking. Whereas your left
+neighbor could change. Track this, and you'll get necessary border segments.
+
+Further note that in the end you'll get segment duplicates - the
+same segment will be repeated as you walk both neighbors. Depending
+on the rendering engine and/or border type it might be prudent
+to eliminate certain duplicates. In EU4's case this probably does not happen.
+Consider the image below: to produce different country colors on 
+both sides of a country border, clearly both border segments need
+to be preserved to then be styled accordingly:
+![eu4-borders](../images/eu4-border-expo.jpg)
+
+The image also neatly illustrates that eu4 too has individual
+border segments - you can see them overlap
+each other.
+
+Another important thing Clausewitz does is smoothing the borders,
+converting polylines with sharp angles into nice smooth curves.
+Oikoumene hasn't cracked this part. Yet. :) In theory it should be
+some kind of a quick and cheap spline (?) algorithm. However note
+that certain borders are very complex, e.g. very broken shorelines
+of Norway and Greenland. And the algorithm should be able to take
+care of those as well.
+
+<a name="rivers"></a>
 ## Rivers
 
+
+
+<a name="name-placement"></a>
 ## Name Placement
