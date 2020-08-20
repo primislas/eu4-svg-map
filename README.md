@@ -11,6 +11,9 @@ that other svg readers would normally [fail](docs/pages/svg-rendering.md)
 to render names correctly.
 * <a href="https://raw.githubusercontent.com/primislas/eu4-svg-map/49c741c04850f28b645940a8af6c445b81bfb3aa/maps/mercator-political-1.30.0.svg" download>mercator-political.svg</a>
 
+Possible mod and savegame support:
+![](docs/images/mod-support.png)
+
 Globe projections can be view directly from github. Chrome and Firefox rendering is identical.
 Svg doesn't give us real 3D, but trigonometry allows us to imagine what if.
 This is why we need a real globe, Paradox! ;)
@@ -30,7 +33,10 @@ Algorithm description:
 * [Name placement](docs/pages/name-placement.md)
 * [Map with svg characteristics](docs/pages/svg-rendering.md)
 
-Don't miss the [bloopers](bloopers). Developing is fun,
+See Also:
+* [Style samples](docs/pages/style-samples.md) - a collection of map style samples and resources 
+I've come across and enjoyed.
+* Don't miss the [bloopers](bloopers). Developing is fun,
 sometimes names hit the fan. :)
 
 ![hit-the-fan](bloopers/names-hit-the-fan.png)
