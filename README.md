@@ -12,6 +12,7 @@ Note that the two browsers will render maps differently. Further, note
 that other svg readers would normally [fail](docs/pages/svg-rendering.md)
 to render names correctly.
 * <a href="https://raw.githubusercontent.com/primislas/eu4-svg-map/master/maps/1.30.0/eu4-political.svg" download>eu4-political.svg</a>
+* <a href="https://raw.githubusercontent.com/primislas/eu4-svg-map/master/maps/1.30.0/eu4-province-outline.svg" download>eu4-province-outline.svg</a>
 
 See also
 * [svg style editing tips](docs/pages/svg-style.md)
