@@ -19,8 +19,7 @@ See also
 * [svg to image](docs/pages/svg-rasterization.md)
 
 Possible [mod](docs/images/mod-support.png) and [save](docs/images/save-and-wastelands.png) support, 
-wasteland ownership. Save and view  
-<a href="https://raw.githubusercontent.com/primislas/eu4-svg-map/master/maps/meiou/eu4-meiou-political.svg" download>MEIOU svg map</a>
+wasteland ownership. Save and view <a href="https://raw.githubusercontent.com/primislas/eu4-svg-map/master/maps/meiou/eu4-meiou-political.svg" download>MEIOU svg map</a>
 by right-clicking and running save as.
 ![](docs/images/mod-meiou-political-paper-sample.png)
 

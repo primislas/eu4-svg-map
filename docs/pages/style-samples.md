@@ -1,9 +1,15 @@
 ## Style Samples
 
-Check out style [samples](../samples) attached to the project. In particular
-the fantabulous map linked below (credit to original 
-[reddit post](https://www.reddit.com/r/eu4/comments/hter01/florence_tuscany_italy_my_first_ever_completed/)):
+Check out style [samples](../samples) attached to the project (links lead to origin pages):
+* [Serene Republic of Italy](https://www.reddit.com/r/eu4/comments/hter01/)
+
 ![](../samples/serene-republic-of-italy.png)
+* [First Indian Republic](https://www.reddit.com/r/eu4/comments/j5k6th/)
+
+![](../samples/first-indian-republic.jpg)
+* [Globe with texture](https://www.reddit.com/r/eu4/comments/j5k6th/)
+
+![](../samples/globe-with-texture.png)
 
 Interesting links and resources:
 * [Atlas of Design](https://atlasofdesign.bigcartel.com/products) 
