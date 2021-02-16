@@ -3,15 +3,16 @@
 Border rendering styles differ depending on the relation between
 each two bordering provinces: is it a country border, an area border,
 a simple border, a shoreline, etc. What this means in practice is that
-its not enough for the border tracer to identify the general shape
+it's not enough for the border tracer to identify the general shape
 (province) border polyline. The latter needs to be split into
 border segments, where each segment is a border between two 
 and only two provinces.
 
-Oikoumene [tracer](province-tracing.md) achieves this by marking border neigbors as it walks
-a shape's border. If you walk a shape clockwise, your right neighbor
-is always the same - the shape you're walking. Whereas your left
-neighbor could change. Track this, and you'll get necessary border segments.
+Oikoumene [tracer](province-tracing.md) achieves this by marking 
+border neighbors as it walks a shape's border. If you walk a shape 
+clockwise, your right neighbor is always the same - the shape you're walking. 
+Whereas your left neighbor could change. Track this, and you'll get 
+necessary border segments.
 
 Further, note that in the end you'll get segment duplicates - the
 same segment will be repeated as you walk both neighbors. Depending
@@ -28,8 +29,5 @@ each other.
 
 Another important thing Clausewitz does is smoothing the borders,
 converting polylines with sharp angles into nice smooth curves.
-Oikoumene hasn't cracked this part. Yet. :) In theory it should be
-some kind of quick and cheap spline (?) algorithm. However, note
-that certain borders are very complex, e.g. very ridged shorelines
-of Norway and Greenland. The algorithm should be able to take
-care of those as well.
+Oikoumene has is using [Schneider's algorithm](border-smoothing.md)
+to achieve this.

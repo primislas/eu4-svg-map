@@ -38,6 +38,7 @@ This is why we need a real globe, Paradox! ;)
 Algorithm description:
 * [Province tracing](docs/pages/province-tracing.md)
 * [Border parsing](docs/pages/border-parsing.md)
+* [Border smoothing](docs/pages/border-smoothing.md)
 * [River parsing](docs/pages/river-parsing.md)
 * [Name placement](docs/pages/name-placement.md)
 * [Map with svg characteristics](docs/pages/svg-rendering.md)
