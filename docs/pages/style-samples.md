@@ -10,6 +10,12 @@ Check out style [samples](../samples) attached to the project (links lead to ori
 * [Globe with texture](https://www.reddit.com/r/eu4/comments/j5k6th/)
 
 ![](../samples/globe-with-texture.png)
+* [Europe, 1444AD by ratkatavobratka](https://www.reddit.com/r/eu4/comments/n76lev/oc_1444_europe_map/)
+
+![](../samples/europe-1444-by-ratkatavobratka.jpg)
+* [Europe, 1000AD by Cyowari](https://www.reddit.com/r/europe/comments/oa4fgl/europe_1000_ad/)
+
+![](../samples/europe-1000-by-cyowari.jpg)
 
 Interesting links and resources:
 * [Atlas of Design](https://atlasofdesign.bigcartel.com/products) 
